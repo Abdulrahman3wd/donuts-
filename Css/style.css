@@ -1,0 +1,391 @@
+:root {
+    --primary-color:#FF2171 ;
+    --second-color :#FF90BB ;
+    --third-color :#FFE4A7 ;
+    --fourd-color :#FFFAD7;
+    --logo-font : Chocoalte ;
+    
+}
+a {
+    text-decoration: underline;
+}
+body::selection {
+    color: var(--primary-color);
+
+}
+nav {
+    -webkit-box-shadow: -3px 11px 38px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: -3px 11px 38px -7px rgba(0,0,0,0.75);
+box-shadow: -3px 11px 38px -7px rgba(0,0,0,0.75);
+z-index: 9999999;
+}
+
+@font-face {
+    font-family: Chocoalte;
+    src: url(../fonts/Chocolate\ Bar\ Demo.otf);
+}
+@font-face {
+    font-family: Sunny Spells;
+    src: url(../fonts/Sunny\ Spells.ttf);
+}
+@font-face {
+    font-family:Alegreya Sans ;
+    src: url(../fonts/AlegreyaSans-Medium.ttf);
+}
+@font-face {
+    font-family: PeachesForBreakfast;
+    src: url(../fonts/PeachesForBreakfast-Regular.ttf);
+}
+.brand-color {
+    color: var(--primary-color);
+    font-family: var(--logo-font) ;
+    font-size: 3rem;
+}
+.brand-color span 
+{
+    color: #ffffff;
+}
+.brand-color:hover {
+    color: #FF2171;
+    
+} 
+.brand-color:focus {
+    color: #FF2171;
+    
+} 
+.nav-font a {
+    font-family:"Alegreya Sans" ,serif ;
+    font-weight: 300 ;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+    font-size: 1.5rem;
+}
+.nav-font a:hover {
+    font-family:"Alegreya Sans" ,serif ;
+    font-weight: 300 ;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+    font-size: 1.5rem;
+}
+
+.nav-design {
+    background: #000000 none repeat scroll 0 0;
+    /* background-image: url(../images/up.png);
+    background-position: center center;
+    background-size: cover ;
+    background-attachment: fixed; */
+
+
+    border-top: 8px solid var(--primary-color);
+    /* margin-top: 30px; */
+    /* transform: skew(0deg,-2deg); */
+}
+.section-home {
+ 
+    background-image: url(../images/beautiful-girl-buys-buns-bakery.jpg);
+background-position: center center;   
+background-attachment: fixed;
+background-size: cover;
+
+ height: 100vh;
+ position: relative;
+ z-index: -1;
+
+}
+.section-layer {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.head-h1 {
+    color: var(--primary-color);
+    font-family: var(--logo-font) , sans-serif;
+    font-size: 4rem;
+    position: relative; 
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.head-h1 span {
+    color: var(--fourd-color);
+}
+.head-h1 span {
+    color: var(--fourd-color);
+    position: relative; 
+    overflow: hidden;
+    border-radius: 50px;
+
+
+}
+
+.home-content {
+    position: relative;
+}
+
+.home-content p {
+
+    color: #fff;
+    font-size: 3rem;
+    font-family: "PeachesForBreakfast"; 
+    font-weight: 400;
+    word-spacing: 2px;
+    margin-top: -20px;
+    
+    /* background-color: #FFE4A7; */
+
+    letter-spacing: 1px;
+}
+.image-up img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+    z-index: 3;
+   }
+   section.Menu {
+    padding: 50px 0px;
+    margin-top: 25px;
+
+   }
+   .head-design {
+    /* background-color: #000000; */
+    text-align: center;
+    color: #000;
+    font-family:Sunny Spells ;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+     transform: skew(0deg,-5deg); 
+
+  
+    margin: 25px auto;
+    
+   }
+.head-design h2 {
+    font-size: 4rem;
+    line-height: 2rem;
+    letter-spacing: 2px;
+    background-color: var(--third-color);
+
+}
+.menu-content {
+    /* background-color: #FF90BB; */
+    padding: 0 15px;
+    margin-top: 25px;
+}
+.menu-content figure {
+    /* background-color: #FFE4A7; */
+    position: relative;
+
+}
+.menu-content figure img
+ {
+    width: 100%;
+    border-radius: 10px;
+
+}
+.menu-content figcaption {
+    position: absolute ;
+    top:2%;
+    left: 2%;
+    right: 2%;
+    bottom: 2%;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 14.5px );
+    -webkit-backdrop-filter: blur( 14.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 1s ease;
+    transform: scale(0);
+    flex-direction: column;
+    color:var(--primary-color);
+    font-weight: bold;
+
+  }
+  .menu-content:hover figcaption {
+    position: absolute ;
+    top:2%;
+    left: 2%;
+    right: 2%;
+    bottom: 2%;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 14.5px );
+    -webkit-backdrop-filter: blur( 14.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+align-items: center;
+    justify-content: center;
+    opacity: 1;
+    font-size: 24px;
+    transform: scale(1);
+    color:var(--primary-color);
+    flex-direction: column;
+    font-weight: bold;
+
+
+  }
+  a.lay-caption {
+    text-decoration: none;
+    text-transform: none;
+    margin-left: 0 !important;
+  }
+/* .menu-content {
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+} */
+/* .under-line {
+    background-color: #f8005f;
+    width: 150px;
+    height: 100px;
+    clip-path: polygon(0 0, 100% 0, 81% 6%, 17% 6%);
+    -webkit-box-shadow: -3px 11px 38px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 11px 38px -7px rgba(0,0,0,0.75);
+    box-shadow: -3px 11px 38px -7px rgba(0,0,0,0.75);} */
+.section-2 {
+
+}
+    .about-us {
+    /* background-color: rgb(59, 29, 8); */
+    /* background-color: #ffffff; */
+    padding: 50px 25px;
+    /* -webkit-box-shadow: -4px 2px 10px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px 2px 10px 1px rgba(0,0,0,0.75);
+box-shadow: -4px 2px 10px 1px rgba(0,0,0,0.75);
+border-radius: 10px; */
+}
+    .heading-h2-text {
+        font-size: 2rem;
+        line-height: 30px;
+        font-family: "Alegreya Sans" , sans-serif;
+        color: #000;
+        max-width: 560px;
+        position: relative;
+        
+    }
+    .heading-h2-text::after {
+        content: "";
+        position: absolute;
+        width: 150px;
+        background-color: var(--primary-color);
+        height: 5px;
+        border-radius: 5px;
+        top: 120%;
+        left: 0;
+        
+        
+    }
+    .in-head-sec span {
+        color: var(--primary-color);
+    }
+   .about-start-part {
+
+   }
+.heading-p {
+    max-width: 400px;
+    font-family: "Alegreya Sans" , sans-serif;
+    line-height: 30px;
+
+    font-size: 1.2rem;
+    margin-top: 40px;
+    
+
+
+}
+.my-buttons {
+    margin: 10px 0 60px;
+}
+
+
+.bg-pink-gradient {
+    background: -webkit-gradient(linear,left top,right top,from(#ec008c),to(#fc6767));
+    background: linear-gradient(90deg,#ec008c,#fc6767);
+    border: 1px solid transparent;
+    -webkit-transition: all .7s ease;
+    transition: all .7s ease;
+}
+.bg-pink-gradient:hover {
+    color: #fff;
+    background: -webkit-gradient(linear,left top,right top,from(#fc6767),to(#ec008c));
+    background: linear-gradient(90deg,#fc6767,#ec008c);
+}
+.outline-border:hover {
+    background: -webkit-gradient(linear,left top,right top,from(#ec008c),to(#fc6767));
+    background: linear-gradient(90deg,#ec008c,#fc6767);
+    border: 1px solid transparent;
+    color: #fff;
+}
+.new-btns {
+    font-family: "Alegreya Sans" , sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    border-radius: 40px;
+    padding: 10px 22px;
+    margin-right: 0;
+}
+.new-btns:nth-child(2) {
+    margin-left: 1.2rem;
+}
+.my-buttons a {
+    text-decoration: none;
+    text-transform: none;
+}
+a.outline-border {
+    color: #000;
+}
+.outline-border {
+    border: 1px solid #bebebe;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.new-btns .arrow-icon {
+    margin-left: 1rem;
+}
+.about-us figure {
+text-align: center;
+    
+}
+.about-us img {
+   
+    animation: rotation 5s infinite linear;
+filter: drop-shadow(.3rem .3rem 0.5rem rgb(0, 0, 0))
+;
+width: 90%;
+
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+
+
+
